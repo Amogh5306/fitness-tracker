@@ -46,25 +46,34 @@ export default function MyDashboard() {
     totalMinutesSpent += Number(allWorkouts[i].duration);
   }
 
-  // Handle workout submission
-  function submitWorkoutForm(e) {
-    e.preventDefault();
-    
-    const newObj = {
-      id: Math.random(),
-      type: inputExercise,
-      duration: Number(inputMins),
-      calories: Number(inputCals),
-      date: inputDate,
-      intensity: inputIntense
-    };
+ // Handle workout submission
+function submitWorkoutForm(e) {
+  e.preventDefault();
 
-    setAllWorkouts([newObj, ...allWorkouts]);
-    
-    setInputMins('');
-    setInputCals('');
+  if (Number(inputMins) <= 0) {
+    alert("Duration must be greater than 0");
+    return;
   }
 
+  if (Number(inputCals) < 0) {
+    alert("Calories cannot be negative");
+    return;
+  }
+
+  const newObj = {
+    id: Math.random(),
+    type: inputExercise,
+    duration: Number(inputMins),
+    calories: Number(inputCals),
+    date: inputDate,
+    intensity: inputIntense
+  };
+
+  setAllWorkouts([newObj, ...allWorkouts]);
+
+  setInputMins('');
+  setInputCals('');
+}
   // Handle goal submission
   function submitGoalForm(e) {
     e.preventDefault();
