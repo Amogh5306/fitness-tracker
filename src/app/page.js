@@ -262,6 +262,7 @@ function submitWorkoutForm(e) {
                       <option value="kcal">kcal</option>
                       <option value="mins">mins</option>
                       <option value="days">days</option>
+                      <option value="steps">steps</option>
                     </select>
                   </div>
                   <button type="submit" className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded text-sm">
