@@ -104,16 +104,12 @@ export default function App() {
 
   return (
     <div style={s.wrap}>
-      <div style={s.sidebar}>
-        <div>
-          <div style={s.logo}>FIT-TRACKER</div>
-          <button style={s.navBtn(page === "home")} onClick={() => setPage("home")}>Main Dashboard</button>
-          <button style={s.navBtn(page === "add")} onClick={() => setPage("add")}>Activity History</button>
-          <button style={s.navBtn(page === "goals")} onClick={() => setPage("goals")}>My Goals</button>
-          <button style={s.navBtn(page === "profile")} onClick={() => setPage("profile")}>Profile</button>
-        </div>
-        <div style={s.footerText}>Logged in as: <strong>{name}</strong></div>
-      </div>
+      <Sidebar
+  page={page}
+  setPage={setPage}
+  name={name}
+  s={s}
+/>
 
       <div style={s.main}>
 
