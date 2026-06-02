@@ -108,7 +108,7 @@ export default function App() {
         <div>
           <div style={s.logo}>FIT-TRACKER</div>
           <button style={s.navBtn(page === "home")} onClick={() => setPage("home")}>Main Dashboard</button>
-          <button style={s.navBtn(page === "add")} onClick={() => setPage("add")}>Log Workouts</button>
+          <button style={s.navBtn(page === "add")} onClick={() => setPage("add")}>Activity History</button>
           <button style={s.navBtn(page === "goals")} onClick={() => setPage("goals")}>My Goals</button>
           <button style={s.navBtn(page === "profile")} onClick={() => setPage("profile")}>Profile</button>
         </div>
@@ -162,6 +162,7 @@ export default function App() {
                   <label style={s.label}>Workout Type</label>
                   <select style={s.select} value={wType} onChange={(e) => setWType(e.target.value)}>
                     <option>Running</option>
+                    <option>Walking</option>
                     <option>Weightlifting</option>
                     <option>Cycling</option>
                     <option>Yoga</option>
