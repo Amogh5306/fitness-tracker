@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Built with [Next.js](https://nextjs.org).
 
-## Getting Started
+---
 
-First, run the development server:
+## How to run this on your computer
+
+You'll need [Node.js](https://nodejs.org) installed first. Then:
 
 ```bash
+# 1. Install the dependencies
+npm install
+
+# 2. Start the app
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Now go to **http://localhost:3000** in your browser and you should see it running 
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## How to make changes
 
-## Learn More
+Open the project in your code editor and edit `app/page.js` — the browser will update automatically as you save.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Commands you'll use
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run dev      # run the app locally (use this while building)
+npm run build    # package it up for production
+npm run start    # run the production version locally
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## How to put it on the internet
+[Vercel](https://vercel.com):
+1. Push your code to GitHub
+2. Go to [vercel.com](https://vercel.com) and import your repo
+3. It'll deploy automatically — every time you push, it updates live
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
