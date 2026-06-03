@@ -42,7 +42,7 @@ export default function Page(){
         {page==="home" && <Dashboard workouts={workouts} totalCals={totalCals} totalMins={totalMins} avgCals={avgCals} s={s} />}
         {page==="add" && <WorkoutSection workouts={workouts} addWorkout={addWorkout} deleteWorkout={deleteWorkout} searchTerm={searchTerm} setSearchTerm={setSearchTerm} intensityFilter={intensityFilter} setIntensityFilter={setIntensityFilter} s={s} />}
         {page==="goals" && <GoalSection goals={goals} addGoal={addGoal} deleteGoal={deleteGoal} s={s} />}
-        {page==="profile" && <ProfileSection name={name} setName={setName} age={age} setAge={setAge} weight={weight} setWeight={setWeight} height={height} setHeight={setHeight} s={s} />}
+        {page==="profile" && <ProfileSection name={name} setName={setName} age={age} setAge={setAge} weight={weight} setWeight={setWeight} height={height} setHeight={setHeight} />}
         {page==="history" && <ActivityHistory workouts={workouts} s={s} />}
       </div>
     </div>
